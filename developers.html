@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Разработчики</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url('preview.jpg');
+            background-size: cover; 
+            background-position: center;
+            min-height: 100vh;
+           
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap; 
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            overflow-x: auto; 
+        }
+
+        article {
+            padding-left: 400px;
+            align-items: center;
+            flex: 0 0 auto; 
+            width: 1400px;
+            height: 500px;
+            overflow: hidden;
+            transition: height .5s;
+            interpolate-size: allow-keywords;
+        }
+
+        article:hover {
+            height: auto;
+        }
+
+        img {
+            width: 70%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: #00a71c; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 20px;
+        }    
+
+        @media (min-width: 1000px) {
+    article { padding-left: 200px; }
+}
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        } 
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <article>
+            <img src="et1.png">
+            <h1>MF Potato</h1>
+            <p>Страдаю хуйнёй, from 0 to fullstack developer and c++ OpenGl huesos</p>
+        </article>
+
+    </div>
+    <br><br>
+    <button onclick="goBack()">Назад</button>
+</body>
+</html>
